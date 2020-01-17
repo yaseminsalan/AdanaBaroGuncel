@@ -35,15 +35,37 @@ class Registered_UserViewController: UIViewController {
                      
                  if (lbl_user.text == String(12345678912)) && (lbl_password.text == String(123)){
                        
-                     let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                     let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
-                     self.present(vc, animated: true, completion: nil)
+                  
+                    let sozlesme=UserDefaults.standard.bool(forKey: "sozlesmekabulkayıtlı")
+                             if sozlesme{
+                                 let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                                              let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
+                                                              self.present(vc, animated: true, completion: nil)
+                             }else{
+                                
+                                 UserDefaults.standard.set("kayıtlı", forKey: "sozlesmekabulk")
+                                 let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                                              let vc = storyboard.instantiateViewController(withIdentifier: "sozlesme") as! SozlesmeViewController
+                                                              self.present(vc, animated: true, completion: nil)
+                             }
+                    
+                 
                        
                    }else{
                        lbl_bilgi.isHidden=false
                        lbl_bilgi.text="Kullanıcı kodu ve Şifrenizi Kontrol ediniz"
                        
                    }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                       }
         
        // if lbl_user.text==""

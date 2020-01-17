@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      }
                      
                    //  KeyboardDismisser.shared.attach()
-        sleep(1)
+        sleep(2)
                
                return true
     }

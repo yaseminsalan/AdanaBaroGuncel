@@ -52,7 +52,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
  
 
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.background.Load(url: welcome[0].back_img_urls)
+      slide1.background.Load(url: welcome[0].back_img_urls)
         slide1.labelTitle.text = self.welcome[0].title_text
         slide1.lblcomment.text = self.welcome[0].exp_text
        //slide1.btn_continue.isEnabled=true
@@ -74,15 +74,23 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         slide3.labelTitle.text = self.welcome[2].title_text
         slide3.lblcomment.text = self.welcome[2].exp_text
         
-    
         
+        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+               slide4.background.Load(url: welcome[3].back_img_urls)
+               slide4.labelTitle.text = self.welcome[3].title_text
+               slide4.lblcomment.text = self.welcome[3].exp_text
+    
+        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+               slide5.background.Load(url: welcome[4].back_img_urls)
+               slide5.labelTitle.text = self.welcome[4].title_text
+               slide5.lblcomment.text = self.welcome[4].exp_text
       /*  let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                let vc = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
                self.present(vc, animated: true, completion: nil)*/
         
         
         
-        return [slide1, slide2, slide3]
+        return [slide1, slide2, slide3, slide4, slide5]
     }
    
     

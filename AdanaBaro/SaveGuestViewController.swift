@@ -30,10 +30,22 @@ class SaveGuestViewController: UIViewController {
         getUserInfo()
           
          if UserInfoControl{
-         
-           let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                              let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
-                              self.present(vc, animated: true, completion: nil)
+            let sozlesme=UserDefaults.standard.bool(forKey: "sozlesmekabulmisafir")
+            if sozlesme{
+                let alert = UIAlertController(title:"TEBRİKLER!", message:"Üyelik işlemleriniz başarılı bir şekilde tamamlanmıştır.",preferredStyle: .alert)
+                let action = UIAlertAction(title: "TAMAM", style: .default)
+                alert.addAction(action)
+                self.present(alert,animated: true,completion: nil)
+                let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                             let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
+                                             self.present(vc, animated: true, completion: nil)
+            }else{
+                 UserDefaults.standard.set("misafir", forKey: "sozlesmekabulm")
+                let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                             let vc = storyboard.instantiateViewController(withIdentifier: "sozlesme") as! SozlesmeViewController
+                                             self.present(vc, animated: true, completion: nil)
+            }
+          
           }
           
         

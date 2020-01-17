@@ -25,6 +25,9 @@
 		E017A84523D0B4FB00607184 /* SaveGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A84423D0B4FB00607184 /* SaveGuestViewController.swift */; };
 		E0773E2023CEECE300EEF773 /* Introscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0773E1F23CEECE300EEF773 /* Introscreen.swift */; };
 		E0773E2223CF456E00EEF773 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0773E2123CF456E00EEF773 /* LoginViewController.swift */; };
+		E09C8A2123D1A23C00710042 /* SozlesmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09C8A2023D1A23C00710042 /* SozlesmeViewController.swift */; };
+		E09C8A2623D1AB7100710042 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09C8A2523D1AB7100710042 /* SSRadioButton.swift */; };
+		E09C8A2823D1AB7600710042 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09C8A2723D1AB7600710042 /* SSRadioButtonsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		E017A84423D0B4FB00607184 /* SaveGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGuestViewController.swift; sourceTree = "<group>"; };
 		E0773E1F23CEECE300EEF773 /* Introscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introscreen.swift; sourceTree = "<group>"; };
 		E0773E2123CF456E00EEF773 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E09C8A2023D1A23C00710042 /* SozlesmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlesmeViewController.swift; sourceTree = "<group>"; };
+		E09C8A2523D1AB7100710042 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSRadioButton.swift; path = "../../../SSRadioButtonsController-master/SSRadioButtonController/SSRadioButton.swift"; sourceTree = "<group>"; };
+		E09C8A2723D1AB7600710042 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSRadioButtonsController.swift; path = "../../../SSRadioButtonsController-master/SSRadioButtonController/SSRadioButtonsController.swift"; sourceTree = "<group>"; };
 		FFCA5BD2598691B3D965E70B /* Pods-AdanaBaroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdanaBaroTests.debug.xcconfig"; path = "Target Support Files/Pods-AdanaBaroTests/Pods-AdanaBaroTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +159,7 @@
 		B662E49723CE396200BBD55B /* AdanaBaro */ = {
 			isa = PBXGroup;
 			children = (
+				E09C8A2423D1AB5C00710042 /* SSRadioButtonController */,
 				B662E49823CE396200BBD55B /* AppDelegate.swift */,
 				B662E49A23CE396200BBD55B /* SceneDelegate.swift */,
 				E0773E1F23CEECE300EEF773 /* Introscreen.swift */,
@@ -161,6 +168,7 @@
 				E017A84223D09DD600607184 /* Registered_UserViewController.swift */,
 				E017A84423D0B4FB00607184 /* SaveGuestViewController.swift */,
 				E017A84023D046AA00607184 /* HomePageViewController.swift */,
+				E09C8A2023D1A23C00710042 /* SozlesmeViewController.swift */,
 				B662E4CA23CE3B4500BBD55B /* Slide.swift */,
 				B662E4C823CE3A7200BBD55B /* Slide.xib */,
 				B662E49E23CE396200BBD55B /* Main.storyboard */,
@@ -187,6 +195,15 @@
 				B662E4BC23CE396600BBD55B /* Info.plist */,
 			);
 			path = AdanaBaroUITests;
+			sourceTree = "<group>";
+		};
+		E09C8A2423D1AB5C00710042 /* SSRadioButtonController */ = {
+			isa = PBXGroup;
+			children = (
+				E09C8A2523D1AB7100710042 /* SSRadioButton.swift */,
+				E09C8A2723D1AB7600710042 /* SSRadioButtonsController.swift */,
+			);
+			path = SSRadioButtonController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,9 +451,12 @@
 				E017A84523D0B4FB00607184 /* SaveGuestViewController.swift in Sources */,
 				E017A84123D046AA00607184 /* HomePageViewController.swift in Sources */,
 				B662E49D23CE396200BBD55B /* ViewController.swift in Sources */,
+				E09C8A2823D1AB7600710042 /* SSRadioButtonsController.swift in Sources */,
+				E09C8A2623D1AB7100710042 /* SSRadioButton.swift in Sources */,
 				B662E49923CE396200BBD55B /* AppDelegate.swift in Sources */,
 				B662E49B23CE396200BBD55B /* SceneDelegate.swift in Sources */,
 				E0773E2023CEECE300EEF773 /* Introscreen.swift in Sources */,
+				E09C8A2123D1A23C00710042 /* SozlesmeViewController.swift in Sources */,
 				B662E4CB23CE3B4500BBD55B /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

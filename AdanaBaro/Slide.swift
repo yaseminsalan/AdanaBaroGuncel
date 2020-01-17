@@ -14,6 +14,7 @@ class Slide: UIView {
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var logo: UIImageView!
     
+    @IBOutlet weak var slideview: UIView!
     
     @IBOutlet weak var labelTitle: UILabel!
     
