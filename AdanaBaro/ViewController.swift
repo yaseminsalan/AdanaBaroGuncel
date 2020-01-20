@@ -52,7 +52,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
  
 
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-      slide1.background.Load(url: welcome[0].back_img_urls)
+     //slide1.background.Load(url: welcome[0].back_img_urls)
         slide1.labelTitle.text = self.welcome[0].title_text
         slide1.lblcomment.text = self.welcome[0].exp_text
        //slide1.btn_continue.isEnabled=true
@@ -76,7 +76,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-               slide4.background.Load(url: welcome[3].back_img_urls)
+              slide4.background.Load(url: welcome[3].back_img_urls)
                slide4.labelTitle.text = self.welcome[3].title_text
                slide4.lblcomment.text = self.welcome[3].exp_text
     
