@@ -40,21 +40,20 @@ class BaroContactTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BaroCell", for: indexPath) as! BaroContactTableViewCell
 
         // Configure the cell...
-        let borderkontrol = contactmodel[indexPath.row].contact_units_id
+        let borderkontrol = contactmodel[indexPath.row].Id
         
         if(borderkontrol=="1"){
         
-            cell.contactview.layer.cornerRadius=5
+            cell.contactview.layer.cornerRadius=7
            cell.contactview.layer.borderWidth=2
             cell.contactview.layer.borderColor=UIColor.red.cgColor
+            cell.lbl_title.textColor = UIColor.red
             cell.lbl_title.text = contactmodel[indexPath.row].title
         }
-        else if(borderkontrol=="2"){
+        else {
             cell.lbl_title.text=contactmodel[indexPath.row].title
         }
-        else{
-            print("beklenmedik bir hata oluştu")
-        }
+        
         
         return cell
     }
@@ -118,7 +117,25 @@ class BaroContactTableViewController: UITableViewController {
            
            return headerView;
        }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if (contactmodel[indexPath.row].Id != "1"){
+          let deneme = contactmodel[indexPath.row].title
+          let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+          let vc = storyboard.instantiateViewController(withIdentifier: "contactDetail") as! BaroContactDetailViewController
+          vc.adres = contactmodel[indexPath.row].adress
+          vc.name = contactmodel[indexPath.row].name
+        vc.dahili = contactmodel[indexPath.row].extension_number
+       
+          vc.tel1 = contactmodel[indexPath.row].phone
+          vc.tel2 = contactmodel[indexPath.row].fax
+      
+          
+          self.present(vc, animated: true, completion: nil)
+            print("tıklandı \(deneme)")}else{
+            print("kırmızı bölge")
+        }
+      }
     
     func Contact(){
     print("fonksiyon içi")
@@ -181,15 +198,17 @@ class BaroContactTableViewController: UITableViewController {
                                 
                                let cardview1 = cardview?[i].components(separatedBy: "[#]")
                                 let contactlist=contact()
-                               contactlist.Id=String((cardview1?[0])!)
-                               contactlist.contact_units_id = String((cardview1?[1])!)
-                                contactlist.title = String((cardview1?[2])!)
-                               contactlist.phone = String((cardview1?[3])!)
-                               contactlist.extension_number = String((cardview1?[4])!)
-                               contactlist.fax = String((cardview1?[5])!)
-                               contactlist.adress = String((cardview1?[6])!)
-                                contactlist.lat = String((cardview1?[7])!)
-                                contactlist.Ing = String((cardview1?[8])!)
+                              contactlist.Id=String((cardview1?[0])!)
+                            contactlist.contact_units_id = String((cardview1?[1])!)
+                            contactlist.title = String((cardview1?[2])!)
+                            contactlist.name=String((cardview1?[3])!)
+                                                         
+                          contactlist.phone = String((cardview1?[4])!)
+                          contactlist.extension_number = String((cardview1?[5])!)
+                        contactlist.fax = String((cardview1?[6])!)
+                        contactlist.adress = String((cardview1?[7])!)
+                        contactlist.lat = String((cardview1?[8])!)
+                        contactlist.Ing = String((cardview1?[9])!)
 
                                 self.contactmodel.append(contactlist);
                                 

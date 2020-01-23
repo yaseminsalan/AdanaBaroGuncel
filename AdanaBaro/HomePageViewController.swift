@@ -9,12 +9,31 @@
 import UIKit
 import FSCalendar
 import SWXMLHash
+import Dropper
+import ENSwiftSideMenu
 public protocol DateSelectDelegate: NSObjectProtocol {
     func selectDate(_ date: Date) -> Void
 }
 //Bu zorunluluk
 private let reuseIdentifier = "PeopleCell";
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, ENSideMenuDelegate {
+    
+    let dropper = Dropper(width: 350, height:700 )
+
+    var slides:[Slide] = [];
+   
+    @IBAction func toggleSideMenuView(_ sender: UIBarButtonItem) {
+           toggleSideMenuView()
+    }
+   
+    @IBAction func dropdownmenu(_ sender: Any) {
+        print("dropdown deneme")
+
+        
+    }
+    
+    @IBOutlet weak var dropdownmenu: UIButton!
+    
      var cardviewmodel=[cartview]()
      let yourColor : UIColor = UIColor( red: 43/255, green: 147/255, blue:6/255, alpha: 1 )
     
@@ -25,10 +44,17 @@ class HomePageViewController: UIViewController {
       fileprivate var selectedDate: Date?
 
     @IBOutlet weak var fsCalendar: FSCalendar!
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
+ 
+         
         homapage()
         
         collectionview.backgroundColor = UIColor(white: 1, alpha: 0.0)
@@ -171,9 +197,40 @@ class HomePageViewController: UIViewController {
           task.resume()
         
       }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (dropper.isHidden == false) { // Checks if Dropper is visible
+            dropper.hideWithAnimation(0.1) // Hides Dropper
+        }
+    }
     
-
+    // MARK: - ENSideMenu Delegate
+     func sideMenuWillOpen() {
+         print("sideMenuWillOpen")
+     }
+     
+     func sideMenuWillClose() {
+         print("sideMenuWillClose")
+     }
+     
+     func sideMenuShouldOpenSideMenu() -> Bool {
+         print("sideMenuShouldOpenSideMenu")
+         return true
+     }
+     
+     func sideMenuDidClose() {
+         print("sideMenuDidClose")
+     }
+     
+     func sideMenuDidOpen() {
+         print("sideMenuDidOpen")
+     }
 }
+extension HomePageViewController: DropperDelegate {
+    func DropperSelectedRow(_ path: IndexPath, contents: String) {
+       // selectedLabel.text = "Selected Row: \(contents)"
+    }
+}
+
 
  extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDelegate {
      
@@ -221,9 +278,14 @@ class HomePageViewController: UIViewController {
     var storyboardControl = article.prepare_segue
      print("celle tıklandı \(storyboardControl)")
     if storyboardControl == "SEQUEFORBAROCONTACT"{
-         print("baro iletişim")
+         let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+         let vc = storyboard.instantiateViewController(withIdentifier: "BaroContactStoryboard") as! BaroContactTableViewController
+          self.present(vc, animated: true, completion: nil)
     }
     else if storyboardControl == "SEQUEFORCOURTHOUSEGUIDE"{
+        let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+              let vc = storyboard.instantiateViewController(withIdentifier: "barorehberStoryboard") as! BaroRehberViewController
+               self.present(vc, animated: true, completion: nil)
          print("adliye rehberi")
     }
    
@@ -234,10 +296,18 @@ class HomePageViewController: UIViewController {
             print("mazeretli hakimler")
        }
     else if storyboardControl == "SEQUEFORINFORMATIONPOOL"{
+        let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                     let vc = storyboard.instantiateViewController(withIdentifier: "BilgihavuzuStoryboard") as! BilgiHavuzuTableViewController
+                      self.present(vc, animated: true, completion: nil)
+      
             print("bilgi havuzu")
        }
     else if storyboardControl == "SEQUEFORPUBLICATIONS"{
             print("yayınlar")
+        let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "yayinPageStoryboard") as! YayinlarPageViewController
+         self.present(vc, animated: true, completion: nil)
+        
        }
     }
      

@@ -1,3 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-AdanaBaro-AdanaBaroUITests/Pods-AdanaBaro-AdanaBaroUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Dropper/Dropper.framework
+${BUILT_PRODUCTS_DIR}/ENSwiftSideMenu/ENSwiftSideMenu.framework
 ${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework
 ${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework
+${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework

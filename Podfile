@@ -4,8 +4,13 @@
 target 'AdanaBaro' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'SWXMLHash', '~> 5.0.0'
-pod 'FSCalendar'
+ pod 'SWXMLHash', '~> 5.0.0'
+ pod 'FSCalendar'
+ pod 'Dropper'
+ pod 'ENSwiftSideMenu', '~> 0.1.4'
+ pod 'PDFReader'
+ pod 'SideMenuSwift'
+
   # Pods for AdanaBaro
 
   target 'AdanaBaroTests' do

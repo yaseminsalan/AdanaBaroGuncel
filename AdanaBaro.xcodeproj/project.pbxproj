@@ -10,6 +10,16 @@
 		28D6BA084751A3B6BA40335A /* Pods_AdanaBaroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC460CCD46F9EBCE13F07B4 /* Pods_AdanaBaroTests.framework */; };
 		2E9EFC11AE3F79EDBAA85F1D /* Pods_AdanaBaro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB0F4513949BAEE3086B09F /* Pods_AdanaBaro.framework */; };
 		42F9D1CB00B45F3FDD13E05E /* Pods_AdanaBaro_AdanaBaroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C02A241F5CD95DA34F9BE40 /* Pods_AdanaBaro_AdanaBaroUITests.framework */; };
+		B60C795023D89865007517BA /* YayinlarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C794F23D89865007517BA /* YayinlarPageViewController.swift */; };
+		B60C795223D89881007517BA /* YayinlarPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C795123D89881007517BA /* YayinlarPageCollectionViewCell.swift */; };
+		B60C795423D89C35007517BA /* YayinlarDetayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C795323D89C35007517BA /* YayinlarDetayTableViewController.swift */; };
+		B60C795623D89C4D007517BA /* YayinlarDetayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C795523D89C4D007517BA /* YayinlarDetayTableViewCell.swift */; };
+		B60F433923D97804009FA87A /* BilgiHavuzuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F433823D97804009FA87A /* BilgiHavuzuTableViewController.swift */; };
+		B60F433B23D97821009FA87A /* BilgiHavuzuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F433A23D97821009FA87A /* BilgiHavuzuTableViewCell.swift */; };
+		B60F433D23D98877009FA87A /* BilgiHavuzuDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F433C23D98877009FA87A /* BilgiHavuzuDetayViewController.swift */; };
+		B60F433F23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F433E23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift */; };
+		B60F434323D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F434223D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift */; };
+		B60F434723D9C2C6009FA87A /* YayinlarPdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F434623D9C2C6009FA87A /* YayinlarPdfViewController.swift */; };
 		B634449223D58C8B002B385A /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634449123D58C8B002B385A /* HomePageCollectionViewCell.swift */; };
 		B634449423D5917E002B385A /* ArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634449323D5917E002B385A /* ArticleItem.swift */; };
 		B636BDB523D5A50200CB9BD6 /* Cartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636BDB423D5A50200CB9BD6 /* Cartview.swift */; };
@@ -17,6 +27,15 @@
 		B636BDB923D5E5D100CB9BD6 /* BaroContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636BDB823D5E5D100CB9BD6 /* BaroContactTableViewCell.swift */; };
 		B636BDBC23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636BDBA23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.swift */; };
 		B636BDBD23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B636BDBB23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.xib */; };
+		B63AE42E23D8377600685C69 /* BaroRehberAraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */; };
+		B63AE43023D8379300685C69 /* BaroRehberAraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */; };
+		B63AE44023D87D4C00685C69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE43F23D87D4C00685C69 /* MenuViewController.swift */; };
+		B63AE44223D87F4B00685C69 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44123D87F4A00685C69 /* MyNavigationController.swift */; };
+		B63AE44623D8830A00685C69 /* denemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44523D8830A00685C69 /* denemeTableViewController.swift */; };
+		B63AE44823D8831900685C69 /* denemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44723D8831900685C69 /* denemeTableViewCell.swift */; };
+		B64B58CF23D6D5E4007747A6 /* BaroContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */; };
+		B64B58D123D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B58D023D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift */; };
+		B64B58E123D73E2E007747A6 /* BaroRehberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B58E023D73E2E007747A6 /* BaroRehberViewController.swift */; };
 		B662E49923CE396200BBD55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662E49823CE396200BBD55B /* AppDelegate.swift */; };
 		B662E49B23CE396200BBD55B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662E49A23CE396200BBD55B /* SceneDelegate.swift */; };
 		B662E49D23CE396200BBD55B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662E49C23CE396200BBD55B /* ViewController.swift */; };
@@ -61,6 +80,16 @@
 		762C84639EC002942A7A032F /* Pods-AdanaBaro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdanaBaro.debug.xcconfig"; path = "Target Support Files/Pods-AdanaBaro/Pods-AdanaBaro.debug.xcconfig"; sourceTree = "<group>"; };
 		9586CD6B3297AE913ABE6323 /* Pods-AdanaBaroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdanaBaroTests.release.xcconfig"; path = "Target Support Files/Pods-AdanaBaroTests/Pods-AdanaBaroTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C02A241F5CD95DA34F9BE40 /* Pods_AdanaBaro_AdanaBaroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdanaBaro_AdanaBaroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60C794F23D89865007517BA /* YayinlarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarPageViewController.swift; sourceTree = "<group>"; };
+		B60C795123D89881007517BA /* YayinlarPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B60C795323D89C35007517BA /* YayinlarDetayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarDetayTableViewController.swift; sourceTree = "<group>"; };
+		B60C795523D89C4D007517BA /* YayinlarDetayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarDetayTableViewCell.swift; sourceTree = "<group>"; };
+		B60F433823D97804009FA87A /* BilgiHavuzuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzuTableViewController.swift; sourceTree = "<group>"; };
+		B60F433A23D97821009FA87A /* BilgiHavuzuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzuTableViewCell.swift; sourceTree = "<group>"; };
+		B60F433C23D98877009FA87A /* BilgiHavuzuDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzuDetayViewController.swift; sourceTree = "<group>"; };
+		B60F433E23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzuDeatayCollectionViewCell.swift; sourceTree = "<group>"; };
+		B60F434223D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzKisiViewController.swift; sourceTree = "<group>"; };
+		B60F434623D9C2C6009FA87A /* YayinlarPdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarPdfViewController.swift; sourceTree = "<group>"; };
 		B634449123D58C8B002B385A /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B634449323D5917E002B385A /* ArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItem.swift; sourceTree = "<group>"; };
 		B636BDB423D5A50200CB9BD6 /* Cartview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartview.swift; sourceTree = "<group>"; };
@@ -68,6 +97,15 @@
 		B636BDB823D5E5D100CB9BD6 /* BaroContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroContactTableViewCell.swift; sourceTree = "<group>"; };
 		B636BDBA23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		B636BDBB23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaroHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroRehberAraTableViewController.swift; sourceTree = "<group>"; };
+		B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroRehberAraTableViewCell.swift; sourceTree = "<group>"; };
+		B63AE43F23D87D4C00685C69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B63AE44123D87F4A00685C69 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = "../../ENSwiftSideMenu-master-5/Example/SwiftSideMenu/MyNavigationController.swift"; sourceTree = "<group>"; };
+		B63AE44523D8830A00685C69 /* denemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denemeTableViewController.swift; sourceTree = "<group>"; };
+		B63AE44723D8831900685C69 /* denemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denemeTableViewCell.swift; sourceTree = "<group>"; };
+		B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroContactDetailViewController.swift; sourceTree = "<group>"; };
+		B64B58D023D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroContactDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B64B58E023D73E2E007747A6 /* BaroRehberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroRehberViewController.swift; sourceTree = "<group>"; };
 		B662E49523CE396200BBD55B /* AdanaBaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdanaBaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B662E49823CE396200BBD55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B662E49A23CE396200BBD55B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +221,8 @@
 				E017A84423D0B4FB00607184 /* SaveGuestViewController.swift */,
 				B636BDB423D5A50200CB9BD6 /* Cartview.swift */,
 				E017A84023D046AA00607184 /* HomePageViewController.swift */,
+				B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */,
+				B64B58D023D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift */,
 				B636BDB623D5E5BA00CB9BD6 /* BaroContactTableViewController.swift */,
 				B636BDBA23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.swift */,
 				B636BDBB23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.xib */,
@@ -190,6 +230,23 @@
 				B634449323D5917E002B385A /* ArticleItem.swift */,
 				B634449123D58C8B002B385A /* HomePageCollectionViewCell.swift */,
 				E09C8A2023D1A23C00710042 /* SozlesmeViewController.swift */,
+				B64B58E023D73E2E007747A6 /* BaroRehberViewController.swift */,
+				B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */,
+				B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */,
+				B63AE44123D87F4A00685C69 /* MyNavigationController.swift */,
+				B63AE43F23D87D4C00685C69 /* MenuViewController.swift */,
+				B63AE44523D8830A00685C69 /* denemeTableViewController.swift */,
+				B63AE44723D8831900685C69 /* denemeTableViewCell.swift */,
+				B60C794F23D89865007517BA /* YayinlarPageViewController.swift */,
+				B60C795123D89881007517BA /* YayinlarPageCollectionViewCell.swift */,
+				B60C795323D89C35007517BA /* YayinlarDetayTableViewController.swift */,
+				B60C795523D89C4D007517BA /* YayinlarDetayTableViewCell.swift */,
+				B60F434623D9C2C6009FA87A /* YayinlarPdfViewController.swift */,
+				B60F433823D97804009FA87A /* BilgiHavuzuTableViewController.swift */,
+				B60F433A23D97821009FA87A /* BilgiHavuzuTableViewCell.swift */,
+				B60F433C23D98877009FA87A /* BilgiHavuzuDetayViewController.swift */,
+				B60F433E23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift */,
+				B60F434223D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift */,
 				B662E4CA23CE3B4500BBD55B /* Slide.swift */,
 				B662E4C823CE3A7200BBD55B /* Slide.xib */,
 				B662E49E23CE396200BBD55B /* Main.storyboard */,
@@ -471,20 +528,39 @@
 				E0773E2223CF456E00EEF773 /* LoginViewController.swift in Sources */,
 				E017A84323D09DD600607184 /* Registered_UserViewController.swift in Sources */,
 				E017A84523D0B4FB00607184 /* SaveGuestViewController.swift in Sources */,
+				B60F433D23D98877009FA87A /* BilgiHavuzuDetayViewController.swift in Sources */,
 				B636BDB923D5E5D100CB9BD6 /* BaroContactTableViewCell.swift in Sources */,
 				E017A84123D046AA00607184 /* HomePageViewController.swift in Sources */,
 				B634449223D58C8B002B385A /* HomePageCollectionViewCell.swift in Sources */,
+				B60C795023D89865007517BA /* YayinlarPageViewController.swift in Sources */,
+				B60C795223D89881007517BA /* YayinlarPageCollectionViewCell.swift in Sources */,
+				B63AE44023D87D4C00685C69 /* MenuViewController.swift in Sources */,
 				B662E49D23CE396200BBD55B /* ViewController.swift in Sources */,
+				B63AE44223D87F4B00685C69 /* MyNavigationController.swift in Sources */,
 				B636BDB723D5E5BA00CB9BD6 /* BaroContactTableViewController.swift in Sources */,
 				E09C8A2823D1AB7600710042 /* SSRadioButtonsController.swift in Sources */,
+				B63AE44823D8831900685C69 /* denemeTableViewCell.swift in Sources */,
 				B634449423D5917E002B385A /* ArticleItem.swift in Sources */,
 				B636BDB523D5A50200CB9BD6 /* Cartview.swift in Sources */,
+				B60F433923D97804009FA87A /* BilgiHavuzuTableViewController.swift in Sources */,
+				B60C795623D89C4D007517BA /* YayinlarDetayTableViewCell.swift in Sources */,
 				E09C8A2623D1AB7100710042 /* SSRadioButton.swift in Sources */,
+				B60F433F23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift in Sources */,
 				B636BDBC23D5E8CA00CB9BD6 /* BaroHeaderTableViewCell.swift in Sources */,
+				B60F433B23D97821009FA87A /* BilgiHavuzuTableViewCell.swift in Sources */,
+				B64B58D123D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift in Sources */,
+				B63AE42E23D8377600685C69 /* BaroRehberAraTableViewController.swift in Sources */,
+				B63AE43023D8379300685C69 /* BaroRehberAraTableViewCell.swift in Sources */,
 				B662E49923CE396200BBD55B /* AppDelegate.swift in Sources */,
+				B64B58E123D73E2E007747A6 /* BaroRehberViewController.swift in Sources */,
 				B662E49B23CE396200BBD55B /* SceneDelegate.swift in Sources */,
+				B60F434323D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift in Sources */,
 				E0773E2023CEECE300EEF773 /* Introscreen.swift in Sources */,
 				E09C8A2123D1A23C00710042 /* SozlesmeViewController.swift in Sources */,
+				B60F434723D9C2C6009FA87A /* YayinlarPdfViewController.swift in Sources */,
+				B63AE44623D8830A00685C69 /* denemeTableViewController.swift in Sources */,
+				B64B58CF23D6D5E4007747A6 /* BaroContactDetailViewController.swift in Sources */,
+				B60C795423D89C35007517BA /* YayinlarDetayTableViewController.swift in Sources */,
 				B662E4CB23CE3B4500BBD55B /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
