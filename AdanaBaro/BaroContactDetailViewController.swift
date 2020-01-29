@@ -34,6 +34,7 @@ class BaroContactDetailViewController: UIViewController,UITableViewDataSource,UI
     @IBAction func back(_ sender: Any) {
         let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "BaroContactStoryboard") as! BaroContactTableViewController
+         vc.modalPresentationStyle = .fullScreen
          self.present(vc, animated: true, completion: nil)
     }
     

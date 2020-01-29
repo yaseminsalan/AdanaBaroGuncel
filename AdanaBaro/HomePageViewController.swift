@@ -7,46 +7,41 @@
 //
 
 import UIKit
-import FSCalendar
+
 import SWXMLHash
-import Dropper
-import ENSwiftSideMenu
+
 public protocol DateSelectDelegate: NSObjectProtocol {
     func selectDate(_ date: Date) -> Void
 }
 //Bu zorunluluk
 private let reuseIdentifier = "PeopleCell";
-class HomePageViewController: UIViewController, ENSideMenuDelegate {
+class HomePageViewController: UIViewController {
     
-    let dropper = Dropper(width: 350, height:700 )
+  
 
     var slides:[Slide] = [];
    
-    @IBAction func toggleSideMenuView(_ sender: UIBarButtonItem) {
-           toggleSideMenuView()
-    }
-   
-    @IBAction func dropdownmenu(_ sender: Any) {
-        print("dropdown deneme")
 
-        
-    }
+   
+   
     
-    @IBOutlet weak var dropdownmenu: UIButton!
+    
     
      var cardviewmodel=[cartview]()
      let yourColor : UIColor = UIColor( red: 43/255, green: 147/255, blue:6/255, alpha: 1 )
     
       
     @IBOutlet weak var collectionview: UICollectionView!
-    fileprivate weak var calendar: FSCalendar!
+  
     open weak var delegate: DateSelectDelegate?
       fileprivate var selectedDate: Date?
 
-    @IBOutlet weak var fsCalendar: FSCalendar!
     
     
     
+    @IBAction func hamburgermenu(_ sender: Any) {
+         self.sideMenuController?.revealMenu()
+    }
     
     
     
@@ -54,7 +49,7 @@ class HomePageViewController: UIViewController, ENSideMenuDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-         
+                           
         homapage()
         
         collectionview.backgroundColor = UIColor(white: 1, alpha: 0.0)
@@ -62,11 +57,7 @@ class HomePageViewController: UIViewController, ENSideMenuDelegate {
         collectionview.delegate = self as? UICollectionViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
         
-               self.fsCalendar.locale = Locale(identifier: "en_US")
-          
-               self.fsCalendar.firstWeekday = 1
-               //        self.fsCalender.identifier = FSCalendarDefaultCellReuseIdentifier
-               self.fsCalendar.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesSingleUpperCase]
+             
                //        self.fsCalender.collectionViewLayout.sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
                //        self.fsCalender.appearance.borderRadius = 0
               // self.updateLabel(Date())
@@ -197,12 +188,7 @@ class HomePageViewController: UIViewController, ENSideMenuDelegate {
           task.resume()
         
       }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if (dropper.isHidden == false) { // Checks if Dropper is visible
-            dropper.hideWithAnimation(0.1) // Hides Dropper
-        }
-    }
-    
+ 
     // MARK: - ENSideMenu Delegate
      func sideMenuWillOpen() {
          print("sideMenuWillOpen")
@@ -224,11 +210,6 @@ class HomePageViewController: UIViewController, ENSideMenuDelegate {
      func sideMenuDidOpen() {
          print("sideMenuDidOpen")
      }
-}
-extension HomePageViewController: DropperDelegate {
-    func DropperSelectedRow(_ path: IndexPath, contents: String) {
-       // selectedLabel.text = "Selected Row: \(contents)"
-    }
 }
 
 

@@ -1,14 +1,14 @@
 //
-//  MenuViewController.swift
+//  SideBar.swift
 //  AdanaBaro
 //
-//  Created by yasemin salan on 22.01.2020.
+//  Created by yasemin salan on 23.01.2020.
 //  Copyright © 2020 Yasemin salan. All rights reserved.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class SideBar: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

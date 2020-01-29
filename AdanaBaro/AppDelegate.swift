@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 let API_URL = "http://limonistcrm.com/ADANABAROSU/mobil"
 @UIApplicationMain
@@ -36,7 +37,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                          // iOS 7 support
                          application.registerForRemoteNotifications(matching: [.badge, .sound, .alert])
                      }
-                     
+                  
+                                   SideMenuController.preferences.basic.menuWidth = 300
+                                   SideMenuController.preferences.basic.statusBarBehavior = .hideOnMenu
+                                   SideMenuController.preferences.basic.enablePanGesture = true
+                                   SideMenuController.preferences.basic.supportedOrientations = .portrait
                    //  KeyboardDismisser.shared.attach()
         sleep(2)
                

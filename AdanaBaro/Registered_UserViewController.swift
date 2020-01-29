@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SideMenuSwift
 class Registered_UserViewController: UIViewController {
 
     var UserInfoControl=true
@@ -35,17 +35,21 @@ class Registered_UserViewController: UIViewController {
                      
                  if (lbl_user.text == String(12345678912)) && (lbl_password.text == String(123)){
                        
-                  
+                 
+                    
+                    
                     let sozlesme=UserDefaults.standard.bool(forKey: "sozlesmekabulkayıtlı")
                              if sozlesme{
-                                 let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                                              let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
-                                                              self.present(vc, animated: true, completion: nil)
+                                   let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                               let vc = storyboard.instantiateViewController(withIdentifier: "sidemenustoryboard") as! SideMenuController
+                                 vc.modalPresentationStyle = .fullScreen
+                                               self.present(vc, animated: true, completion: nil)
                              }else{
                                 
                                  UserDefaults.standard.set("kayıtlı", forKey: "sozlesmekabulk")
                                  let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                                                               let vc = storyboard.instantiateViewController(withIdentifier: "sozlesme") as! SozlesmeViewController
+                                 vc.modalPresentationStyle = .fullScreen
                                                               self.present(vc, animated: true, completion: nil)
                              }
                     

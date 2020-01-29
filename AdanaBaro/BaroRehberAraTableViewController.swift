@@ -222,6 +222,7 @@ var rehbermodelbirim = [rehber]()
          let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                let vc = storyboard.instantiateViewController(withIdentifier: "barorehberStoryboard") as! BaroRehberViewController
                vc.aramadeger = aramadeger
+         vc.modalPresentationStyle = .fullScreen
                self.present(vc, animated: true, completion: nil)
       }
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PDFReader
+
 import PDFKit
 
 class YayinlarPdfViewController: UIViewController {

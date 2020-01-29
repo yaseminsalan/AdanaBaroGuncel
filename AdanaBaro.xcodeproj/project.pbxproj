@@ -20,6 +20,7 @@
 		B60F433F23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F433E23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift */; };
 		B60F434323D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F434223D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift */; };
 		B60F434723D9C2C6009FA87A /* YayinlarPdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F434623D9C2C6009FA87A /* YayinlarPdfViewController.swift */; };
+		B60F434923D9E069009FA87A /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F434823D9E069009FA87A /* SideBar.swift */; };
 		B634449223D58C8B002B385A /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634449123D58C8B002B385A /* HomePageCollectionViewCell.swift */; };
 		B634449423D5917E002B385A /* ArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634449323D5917E002B385A /* ArticleItem.swift */; };
 		B636BDB523D5A50200CB9BD6 /* Cartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B636BDB423D5A50200CB9BD6 /* Cartview.swift */; };
@@ -30,7 +31,6 @@
 		B63AE42E23D8377600685C69 /* BaroRehberAraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */; };
 		B63AE43023D8379300685C69 /* BaroRehberAraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */; };
 		B63AE44023D87D4C00685C69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE43F23D87D4C00685C69 /* MenuViewController.swift */; };
-		B63AE44223D87F4B00685C69 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44123D87F4A00685C69 /* MyNavigationController.swift */; };
 		B63AE44623D8830A00685C69 /* denemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44523D8830A00685C69 /* denemeTableViewController.swift */; };
 		B63AE44823D8831900685C69 /* denemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AE44723D8831900685C69 /* denemeTableViewCell.swift */; };
 		B64B58CF23D6D5E4007747A6 /* BaroContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */; };
@@ -90,6 +90,7 @@
 		B60F433E23D9888E009FA87A /* BilgiHavuzuDeatayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzuDeatayCollectionViewCell.swift; sourceTree = "<group>"; };
 		B60F434223D9B2CA009FA87A /* BilgiHavuzKisiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilgiHavuzKisiViewController.swift; sourceTree = "<group>"; };
 		B60F434623D9C2C6009FA87A /* YayinlarPdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayinlarPdfViewController.swift; sourceTree = "<group>"; };
+		B60F434823D9E069009FA87A /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		B634449123D58C8B002B385A /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B634449323D5917E002B385A /* ArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItem.swift; sourceTree = "<group>"; };
 		B636BDB423D5A50200CB9BD6 /* Cartview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartview.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroRehberAraTableViewController.swift; sourceTree = "<group>"; };
 		B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroRehberAraTableViewCell.swift; sourceTree = "<group>"; };
 		B63AE43F23D87D4C00685C69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		B63AE44123D87F4A00685C69 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = "../../ENSwiftSideMenu-master-5/Example/SwiftSideMenu/MyNavigationController.swift"; sourceTree = "<group>"; };
 		B63AE44523D8830A00685C69 /* denemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denemeTableViewController.swift; sourceTree = "<group>"; };
 		B63AE44723D8831900685C69 /* denemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denemeTableViewCell.swift; sourceTree = "<group>"; };
 		B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaroContactDetailViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +221,7 @@
 				E017A84423D0B4FB00607184 /* SaveGuestViewController.swift */,
 				B636BDB423D5A50200CB9BD6 /* Cartview.swift */,
 				E017A84023D046AA00607184 /* HomePageViewController.swift */,
+				B60F434823D9E069009FA87A /* SideBar.swift */,
 				B64B58CE23D6D5E4007747A6 /* BaroContactDetailViewController.swift */,
 				B64B58D023D6DC2E007747A6 /* BaroContactDetailTableViewCell.swift */,
 				B636BDB623D5E5BA00CB9BD6 /* BaroContactTableViewController.swift */,
@@ -233,7 +234,6 @@
 				B64B58E023D73E2E007747A6 /* BaroRehberViewController.swift */,
 				B63AE42D23D8377600685C69 /* BaroRehberAraTableViewController.swift */,
 				B63AE42F23D8379300685C69 /* BaroRehberAraTableViewCell.swift */,
-				B63AE44123D87F4A00685C69 /* MyNavigationController.swift */,
 				B63AE43F23D87D4C00685C69 /* MenuViewController.swift */,
 				B63AE44523D8830A00685C69 /* denemeTableViewController.swift */,
 				B63AE44723D8831900685C69 /* denemeTableViewCell.swift */,
@@ -525,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60F434923D9E069009FA87A /* SideBar.swift in Sources */,
 				E0773E2223CF456E00EEF773 /* LoginViewController.swift in Sources */,
 				E017A84323D09DD600607184 /* Registered_UserViewController.swift in Sources */,
 				E017A84523D0B4FB00607184 /* SaveGuestViewController.swift in Sources */,
@@ -536,7 +537,6 @@
 				B60C795223D89881007517BA /* YayinlarPageCollectionViewCell.swift in Sources */,
 				B63AE44023D87D4C00685C69 /* MenuViewController.swift in Sources */,
 				B662E49D23CE396200BBD55B /* ViewController.swift in Sources */,
-				B63AE44223D87F4B00685C69 /* MyNavigationController.swift in Sources */,
 				B636BDB723D5E5BA00CB9BD6 /* BaroContactTableViewController.swift in Sources */,
 				E09C8A2823D1AB7600710042 /* SSRadioButtonsController.swift in Sources */,
 				B63AE44823D8831900685C69 /* denemeTableViewCell.swift in Sources */,

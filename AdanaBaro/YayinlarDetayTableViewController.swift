@@ -100,6 +100,7 @@ class YayinlarDetayTableViewController: UITableViewController {
             
               let vc = storyboard.instantiateViewController(withIdentifier: "yayinlarPdf") as! YayinlarPdfViewController
                 vc.pdf_url = yayinlardetaymodel[indexPath.row].url_pdf
+         vc.modalPresentationStyle = .fullScreen
                self.present(vc, animated: true, completion: nil)
     }
 

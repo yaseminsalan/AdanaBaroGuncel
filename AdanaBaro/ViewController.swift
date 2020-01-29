@@ -19,6 +19,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         print("Butona tıklandı")
         let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
         
         

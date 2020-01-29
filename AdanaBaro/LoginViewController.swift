@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBAction func kayıtlı_kullanıcı(_ sender: Any) {
         let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                let vc = storyboard.instantiateViewController(withIdentifier: "registered") as! Registered_UserViewController
+         vc.modalPresentationStyle = .fullScreen
                self.present(vc, animated: true, completion: nil)
     }
     
@@ -21,6 +22,7 @@ class LoginViewController: UIViewController {
       
         let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "saveguest") as! SaveGuestViewController
+         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
       /*  let storyboard: UIStoryboard = UIStoryboard(name: “Main”, bundle: nil)
         let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: “SecondVc”) as! SecondViewController

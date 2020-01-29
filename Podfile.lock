@@ -1,36 +1,20 @@
 PODS:
-  - Dropper (2.7.6)
-  - ENSwiftSideMenu (0.1.4)
-  - FSCalendar (2.8.1)
-  - PDFReader (2.5.1)
   - SideMenuSwift (2.0.3)
   - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
-  - Dropper
-  - ENSwiftSideMenu (~> 0.1.4)
-  - FSCalendar
-  - PDFReader
   - SideMenuSwift
   - SWXMLHash (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
-    - Dropper
-    - ENSwiftSideMenu
-    - FSCalendar
-    - PDFReader
     - SideMenuSwift
     - SWXMLHash
 
 SPEC CHECKSUMS:
-  Dropper: 52a020beb6fef2e4b1d55447f17099e5776954ef
-  ENSwiftSideMenu: 21e755dae28f09bbf453aa83b3d05f2e5f92ca39
-  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
-  PDFReader: 2c4a845d0560f33221cf911516e3b700967680f6
   SideMenuSwift: 5c2b1496544ce3f1f08f4dddf4810eaac49f543d
   SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: b09a7c3752dc505077288f3d3387aa36db35e685
+PODFILE CHECKSUM: 9e83d35f389fcf41ab2e292826cb2d52261590fc
 
 COCOAPODS: 1.8.4

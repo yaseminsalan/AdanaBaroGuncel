@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class SozlesmeViewController: UIViewController,SSRadioButtonControllerDelegate{
 
@@ -35,10 +36,9 @@ class SozlesmeViewController: UIViewController,SSRadioButtonControllerDelegate{
                  UserDefaults.standard.set(true, forKey: "sozlesmekabulmisafir")
             }
             
-            
-            let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! HomePageViewController
-            self.present(vc, animated: true, completion: nil)
+              let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+              let vc = storyboard.instantiateViewController(withIdentifier: "sidemenustoryboard") as! SideMenuController
+              self.present(vc, animated: true, completion: nil)
             print("butona tıklama olayı")
             
             
