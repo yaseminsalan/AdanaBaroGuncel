@@ -38,6 +38,7 @@ class SozlesmeViewController: UIViewController,SSRadioButtonControllerDelegate{
             
               let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
               let vc = storyboard.instantiateViewController(withIdentifier: "sidemenustoryboard") as! SideMenuController
+            print("deneme")
               self.present(vc, animated: true, completion: nil)
             print("butona tıklama olayı")
             
